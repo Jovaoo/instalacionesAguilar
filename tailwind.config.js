@@ -62,11 +62,16 @@ export default {
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 }
-        }
+        },
+        fadeInZoomRotate: {
+          '0%': { opacity: '0', transform: 'scale(0.8) rotate(-25deg)' },
+          '100%': { opacity: '1', transform: 'scale(1) rotate(0deg)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out"
+        "accordion-up": "accordion-up 0.2s ease-out",
+        'fade-in-zoom-rotate': 'fadeInZoomRotate 0.8s ease-out forwards',
       },
     },
   },
